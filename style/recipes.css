@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+:root {
+    --title-font: 'Amatic SC', cursive;
+    --subtitle-font: 'Josefin Sans', sans-serif;
+    --text-font: 'Alegreya Sans', sans-serif;
+    --background-color: rgb(5, 22, 71);
+    --gradient-color1: rgb(26, 10, 41);
+    --gradient-color2: rgba(66, 29, 100, 0.795);
+    --font-color: #fff;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--background-color), var(--gradient-color1), var(--gradient-color2));
+    color: var(--font-color);
+    font-family: var(--text-font);
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.63);
+    margin: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+
+article {
+    background-color: rgba(150, 144, 197, 0.726);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.76);
+}
+
+.recipe__title {
+    background-image: url(../image/home-img3.jpg);
+    background-position: center;
+    font-family: var(--title-font);
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: -2rem -1rem 2rem -1rem; 
+    padding: 3rem;
+}
+
+.recipe__line {
+    display: none;
+}
+
+.recipe__img {
+    width: 70%;
+    border-radius: 1vw;
+    border: 2px outset var(--font-color);
+    margin-top: 0.3rem;
+}
+
+.recipe__subt {
+    font-family: var(--subtitle-font);
+    margin: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.recipe__info, .recipe__ingredients, .recipe__steps, .recipe__tips, .recipe__nutrition {
+    font-family: var(--title-font);
+    font-weight: bolder;
+    font-size: 2.4rem;
+    margin: 1.6rem 0 1rem 0;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.76);
+}
+
+table {
+    width: 100%;
+}
+
+table, td {
+    border: 1px solid;  
+    border-collapse: collapse;   
+}
+
+td, th {
+    padding: 0.5rem;
+}
+
+.recipe__list {
+    margin-bottom: 2rem;
+}
+
+.footer__p {
+    background-image: url(../image/footer1.jpg);
+    font-family: var(--subtitle-font);
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+    margin-left: -1rem;
+    margin-right: -1rem;;
+    padding: .7rem 0;
+}
+
+.footer__a {
+    color:#fff;
+    text-decoration: none;
+    margin-right: -1rem;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+    .recipe__title {
+        background-image: url(../image/home-img3.jpg);
+        font-size: 6rem;  
+        margin: 0;
+        padding: 3rem;
+    }
+
+    .recipe__img {
+        margin-top: 2rem;
+    }
+
+    .recipe__subt {
+        font-size: 1.5rem;
+        margin: 1rem auto 2rem auto;
+        width: 50%;
+    }
+
+    .recipe__img {
+        width: 30%;
+    }
+
+    article {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    body > hr {
+        display: none;
+    }
+
+    aside {
+        width: 30%;
+        margin: 2rem auto;
+    }
+
+    table {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    li, p {
+        margin: 0 6rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+}

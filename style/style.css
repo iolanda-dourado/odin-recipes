@@ -22,7 +22,7 @@ body {
 
 .title {
     color: var(--font-color);
-    font-size: 6vw;
+    font-size: 5rem;
     font-family: var(--title-font);
     font-weight: 700;
     padding: 2rem 0rem 2rem 0rem;
@@ -30,18 +30,18 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 5px #000;
+    text-shadow: 2px 2px 3px #000;
 }
 
 .subtitle {
     color: var(--font-color);
     padding: 2rem 0;
     font-family: var(--subtitle-font);
-    font-size: 1.8vw;
+    font-size: 1.5rem;
     text-align: center;
-    text-shadow: 2px 2px 5px #000;
+    text-shadow: 2px 2px 3px #000;
     position: absolute;
-    top: 63%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -66,7 +66,7 @@ body {
     grid-template-columns: auto auto;
     gap: 3rem 0;
     justify-content: space-evenly;
-    margin: 3rem auto;
+    margin: 6rem auto;
 }
 
 .title__photo {
@@ -80,21 +80,17 @@ body {
     position: absolute;
     top: 90%;
     left: 50%;
-    text-shadow: 2px 2px 3px #000;
+    text-shadow: 2px 2px 2px #000;
     white-space: nowrap;
 }
 
-.footer__container {
-    background-image: url(../image/footer1.jpg);
-    position: fixed;
-    bottom: 0;
-    width: 20vw;
-}
-
 .footer__title {
+    background-image: url(../image/footer1.jpg);
+    font-size: 1.7rem;
+    padding: 1.3rem;
     color: var(--font-color);
-    font-family: var(--title-font);
-    font-size: 2vw;
+    font-family: var(--subtitle-font);
+    font-size: 2rem;
     font-weight: bolder;
     text-align: center;
     text-shadow: 2px 2px 2px #000;
@@ -103,31 +99,36 @@ body {
 @media screen and (max-width: 768px){
 
     .title {
-        font-size: 2.5rem;
+        font-size: 2.9rem;
     }
 
     .subtitle {
-        font-size: 1rem;
-        top: 87%;
-        left: 50%;
+        font-size: 1.2rem;
+        top: 123%;
     }
 
     .content__container {
         display: block;
-        margin-left: 3.9rem;
     }
 
     .recipe-img {
         max-width: 70vw;
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
+        margin-left: -1rem;
     }
 
     .title__recipe {
         font-size: 1rem;
+        top: 70%;
+        left: 65%;
     }
 
-    .title__recipe {
-        top: 85%;
-        left: 70%;
+    .footer__title {
+        background-image: url(../image/footer1.jpg);
+        font-size: 1.7rem;
+        text-align: center;
+        position: relative;
+        margin-top: -7rem;
+        padding: .9rem;
     }
 }
